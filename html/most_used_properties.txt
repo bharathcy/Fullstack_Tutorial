@@ -1,0 +1,42 @@
+width
+height
+
+min-height
+max-height
+
+min-width
+max-width
+
+
+
+
+margin
+padding
+color
+float
+background-color
+background-image
+text-aligncenter
+font-size
+font-weight
+font-family
+border
+border-radius
+line-height
+style-dispaly-type
+display
+colspan
+ahover
+avisited
+aactive
+alink
+positionstatic
+		 fixed
+         absolute
+		 sticky
+		 relative
+		 
+opacity
+z-index 1
+text-decoration
+cursor
