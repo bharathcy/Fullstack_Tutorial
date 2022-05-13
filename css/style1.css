@@ -1,0 +1,43 @@
+body{
+	background-color:#fff;
+	border: 0;
+	padding: 0;
+	height: 1000px;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+
+.outer_div{	
+	position: relative;
+	border: 5px solid green;
+	background-color:rgba(0, 255, 0, 0.1);
+}
+
+#division1{
+	height: 100px;
+	width:  200px;
+	border: 5px solid red;
+	border-radius: 20px;
+	background-color:green;
+	margin: 50px;
+}
+
+#division2{
+	height: 100px;
+	width:  200px;
+	border: 5px solid red;
+	border-radius: 20px;
+	background-color:blue;
+	margin: 50px;
+	padding: 10px 50px;
+}
+
+/*
+#division3{
+	background-color:rgba(0, 255, 0, 0.1);
+}
+*/

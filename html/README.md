@@ -13,18 +13,3 @@ CSS
 -------------------------
 8. position Links, Layout and Commnly used Tags, Significant new data types offered by HTML5
 
-
-
-
-
-sidebar, navigation bar, footer, header
-
-<div>
-
-
-<br>
-<p>
-<h>
-<a>
-<img>
-<iframe>
