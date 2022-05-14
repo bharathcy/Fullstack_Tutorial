@@ -1,12 +1,14 @@
 body{
 	background-color:#fff;
-	border: 0;
-	padding: 0;
 	height: 1000px;
 }
 
+*{
+	box-sizing: border-box;
+	border: 0;
+	padding: 0;
 
-
+}
 
 .outer_div{	
 	position: relative;
