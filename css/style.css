@@ -58,9 +58,9 @@ ul{
 
 
 li{
-	float: left;
 	padding: 20px;
 	color: #fff;
+	display: inline-block;
 }
 
 .web-heading{
