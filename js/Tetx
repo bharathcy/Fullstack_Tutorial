@@ -1,0 +1,14 @@
+HTML ==> Content
+CSS	 ==> Design
+JS 	 ==> Control
+
+
+60-70% of Github code is with 	==> JS
+
+
+Different JS menthods to get the output on your web page:
+	1. Alerts
+		alerts, msgbox, prompts
+	2. console.log
+	3. innerHTML, innerText
+	4. Document.write()
