@@ -12,3 +12,58 @@ Different JS menthods to get the output on your web page:
 	2. console.log
 	3. innerHTML, innerText
 	4. Document.write()
+
+
+Data Type
+	They describe the characterstics of data
+
+
+1. Primitive
+	Numbers			==> x = 100.30;	or	x = 20;
+	Strings			==> "Bharath0101"
+	Boolean			==> True or False
+	Null			==> x = null, x has empty value or no value (still still has memory)
+	Undefined		==> x = undefined
+
+	Declaration:	var x;
+					doesn't have any memory allocated to the variable
+
+	Definition: 	var x=null or x = 10 or x = 20.3 or x= "something";
+					do have memory allocated to the variable
+
+
+	a. Primitive types are immutable (not changable) ==> we cannot modify it
+	b. We can compare the values of data
+		let x = 20;
+		let y = 30;
+		let x = "Good";
+		let y = "Bad";
+		if (x==y)	==> we can compare
+
+
+	Numbers
+		Can be integer or decimal (float)
+		We can perform all mathemmatical operations
+
+
+	Strings
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Non-Primitive
+	Objects
+	Functions
+	Arrays
