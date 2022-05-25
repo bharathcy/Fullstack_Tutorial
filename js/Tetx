@@ -21,8 +21,29 @@ Data Type
 1. Primitive
 	Numbers			==> x = 100.30;	or	x = 20;
 	Strings			==> "Bharath0101"
-	Boolean			==> True or False
-	Null			==> x = null, x has empty value or no value (still still has memory)
+
+	Boolean			==> true or false
+
+						All the numbers whether +ve or -ve ==> true
+						But Zero ==> false
+
+						All the sting with some length ==> true
+						if zero length ==> false
+						
+
+						Falsy Values
+							undefined
+							0
+							null
+							NaN
+							false
+							''
+							""
+							``
+
+							console.log(z)
+
+	Null			==> x = null, x has empty value or no value (still has memory)
 	Undefined		==> x = undefined
 
 	Declaration:	var x;
@@ -36,7 +57,7 @@ Data Type
 	b. We can compare the values of data
 		let x = 20;
 		let y = 30;
-		let x = "Good";
+		let x = "Good";	==> x[0]
 		let y = "Bad";
 		if (x==y)	==> we can compare
 
@@ -47,19 +68,17 @@ Data Type
 
 
 	Strings
+		Text with in a single quote or a double quote in js
+		'Bharath' or "Bharath" or `Bharath`
+
 		
 
 
-
-
-
-
-
-
-
-
-
-
+		x = "something"	==> Address x 20004000	s
+									  20004001	o
+									  20004002	m
+									  20004003	e
+									  20004004	t
 
 
 

@@ -76,8 +76,6 @@ let data = document.getElementById('data')
 	//console.log(Name.split(''))
 
 
-
-
 	data.innerHTML = `Name of the person is ${Name}, 2nd Charecter is ${acces_char}, 
 	and lower case of the Name is ${lower}`
 
@@ -90,10 +88,62 @@ let data = document.getElementById('data')
 
 	Name = "   India                 "
 	Trimmed_Name = Name.trim()
-	//console.log(Name, Name.length, Trimmed_Name, Trimmed_Name.length)
-
-
+	console.log(Name, Name.length, Trimmed_Name, Trimmed_Name.length)
 	console.log(multi_line1.includes('free'))
+	console.log(multi_line1.replace("Tokyo", "Delhi"))
+	console.log(multi_line1.charCodeAt(20))
+	console.log(multi_line1.charAt(20))
+	console.log(multi_line1.indexOf('said'))
+	console.log(multi_line1.lastIndexOf('said'))
+	skills = skills.concat("Python", "React")
+	console.log(skills)
+	console.log(multi_line1.startsWith("Opening"))
+	console.log(multi_line1.endsWith("."))
+
+
+
+	let news_text = `Game streaming and e-sports platform Rooter on May 25 announced that it 
+	has signed prominent Indian e-sports team GodLike as part of the company's
+	Rs 100 crore investment in the country's e-sports industry.
+	GodLike is moving to Rooter after a rather short stint at Krafton-backed 
+	rival Loco that had signed them up in January 2022.`
+
+
+	// \d 		single digit
+	// \d?		zero or 1 digit
+	// \d+		1 or more
+	// \d{3}	exact 3 digits
+	// \d{4,8}	4 to 6 digits
+
+	// \D      Except digits it will search for the rest of the strings
+	// \w 		charecter
+	// \s 		space
+	// \\
+	// ^		startsWith
+	// $		endsWith			
+
+
+	console.log(news_text.match(/\d{2,4}/g))
+
+
+	let lightOn = true
+	let lightoff = false
+
+	x = NaN
+	if (x){
+		console.log("Yes")		
+	}
+	else{
+		console.log("No")		
+	}
+
+
+
+
+
+
+
+
 
 
 
