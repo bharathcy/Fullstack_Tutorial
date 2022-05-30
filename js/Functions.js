@@ -172,15 +172,20 @@ function add_aa(var1){
 
 //Self invoking Function
 
-(function prints(){
-  console.log("Hello world!!")
-})();
+// (function prints(){
+//   console.log("Hello world!!")
+// })();
 
 
+// ES6
+//Arrow functions
 
+ function square(n){
+   return n * n
+ }
 
+add = (a,b=300) => a+b
 
+arguments
 
-
-
-
+args
