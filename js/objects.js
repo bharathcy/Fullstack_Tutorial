@@ -36,9 +36,76 @@ for (i in person)
 
 
 
-console.log(Object.keys(person))
+// console.log(Object.keys(person))
 
-delete person['first_name']
-console.log(Object.keys(person))
-person['first_name'] = "Kumar"
-console.log(Object.keys(person))
+// delete person['first_name']
+// console.log(Object.keys(person))
+// person['first_name'] = "Kumar"
+// console.log(Object.keys(person))
+
+
+
+
+let general_person = {
+		full_name : function(age, gender){ 
+			return this.first_name + " " +
+				   this.last_name + " " +
+				   age+ " " +gender
+		}
+}
+
+let person1 = {
+		first_name: "Sachin",
+		last_name: "Tendulkar"
+	}
+
+let person2 = {
+		first_name: "KL",
+		last_name: "Rahul"
+	}
+
+
+
+// 1. Call Method		
+// 2. Apply Method
+// 3. Bind Method		==> It requires callback knowledge
+
+
+
+
+
+
+
+let person3 = {
+		first_name: "KL",
+		last_name: "Rahul",
+		full_name : function(){ 
+			console.log(this.first_name + " " +
+				   this.last_name + " ")
+		}
+}
+
+//callback function:
+// its a function that will be passed to another function 
+// as an argument/parameter
+
+//setTimeout(person3.full_name.bind(person1), 3000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
