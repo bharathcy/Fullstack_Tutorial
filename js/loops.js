@@ -72,5 +72,8 @@ for (let country of contries){
 
 }
 
+break 		==> It will terminates the execution of the loop
+continue 	==> It will skip the execution of the particular
+				iteration of the loop
 
 
