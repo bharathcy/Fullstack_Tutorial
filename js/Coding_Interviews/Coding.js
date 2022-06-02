@@ -131,7 +131,8 @@ function add(a){
 
 //pass by reference
 function add_array(a){
-	a.push(10)
+	//a = [20]		// This is pass by value 
+	a.push(10)	// This is pass by referrence
 }
 
 let number = 10
@@ -140,6 +141,8 @@ let number_array = [1, 2, 3, 5]
 console.log(number)
 add(number)
 console.log(number)
+
+
 console.log(number_array)
 add_array(number_array)
 console.log(number_array)
@@ -241,3 +244,12 @@ function Armstrong(original_number){
 // table.style.margin = "auto";
 // container = document.getElementById('container')
 // container.appendChild(table);
+
+
+/*--------------------------------------------------------------------------------
+						elements common in 2 arrays
+--------------------------------------------------------------------------------*/
+let a = [1, 2, 3, 4, 5]
+let b = [3, 4, 5, 6]
+let c = a.filter((num) => b.includes(num))
+//console.log(c)
