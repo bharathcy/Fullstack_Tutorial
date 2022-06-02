@@ -37,6 +37,8 @@ array_name = [1, 3, 5, 77, 5, 77, 86, 3, 90]
 output_array = array_name.filter((element, index) => array_name.indexOf(element) == index);
 //console.log(output_array)
 
+//NOTE: we can use set instead, if they specifically asks without using sets use the above program
+
 
 /*--------------------------------------------------------------------------------
 									Reverse a string in JS
@@ -56,7 +58,27 @@ output = palindrome("CABBAGE")
 //console.log(output)
 
 
-	
+
+/*--------------------------------------------------------------------------------
+				Search without using builtin method
+--------------------------------------------------------------------------------*/
+var index = 0;
+var string_tobe_searched = 'e';
+var collection = ['a', 'b', 'c', 'd'];
+
+function search_string(){
+  for(var val of collection) {
+    if(val === string_tobe_searched){
+    return "String found";
+  }
+ }
+  return "String not found";
+}
+
+let found = search_string()
+//console.log(found);
+
+
 /*--------------------------------------------------------------------------------
 						Palindrome without using builtin functions	
 --------------------------------------------------------------------------------*/
@@ -70,6 +92,57 @@ palindrome_without_default_methods = (inp) => {
 	}
 	output = palindrome_without_default_methods("ABCBA")
 	//console.log(output)
+
+
+/*--------------------------------------------------------------------------------
+						Sort an array without using builtin functions	
+--------------------------------------------------------------------------------*/
+function sort_array(array) {
+  var done = false;
+  while (!done) {
+    done = true;
+    for (var i = 1; i < array.length; i += 1) {
+      if (array[i - 1] > array[i]) {
+        done = false;
+        var tmp = array[i - 1];
+        array[i - 1] = array[i];
+        array[i] = tmp;
+      }
+    }
+  }
+  return array;
+}
+
+var numbers = [12, 10, 15, 11, 14, 13, 16];
+//sort_array(numbers);
+//console.log(numbers);
+
+
+
+
+/*--------------------------------------------------------------------------------
+						Pass by value and Pass by reference	
+--------------------------------------------------------------------------------*/
+
+//pass by value
+function add(a){
+	a = a+10
+}
+
+//pass by reference
+function add_array(a){
+	a.push(10)
+}
+
+let number = 10
+let number_array = [1, 2, 3, 5]
+
+console.log(number)
+add(number)
+console.log(number)
+console.log(number_array)
+add_array(number_array)
+console.log(number_array)
 
 
 /*--------------------------------------------------------------------------------
@@ -140,31 +213,31 @@ function Armstrong(original_number){
 	    console.log(`${original_number} is not an Armstrong number.`);
 	}
 }
-Armstrong(896)
+//Armstrong(896)
 /*--------------------------------------------------------------------------------
 									Chess board Layout
 --------------------------------------------------------------------------------*/
 
-var table = document.createElement("table");
-for (var i = 1; i < 9; i++) {
-    var tr = document.createElement('tr');
-    for (var j = 1; j < 9; j++) {
-        var td = document.createElement('td');
-        if (i%2 == j%2) {
-            td.style.backgroundColor = "white";
-            td.style.height = "100px";
-            td.style.width = "100px";
-        } else {
-            td.style.backgroundColor = "black";
-            td.style.height = "100px";
-            td.style.width = "100px";
-        }
-        tr.appendChild(td);
-    }
-    table.appendChild(tr);
-}
+// var table = document.createElement("table");
+// for (var i = 1; i < 9; i++) {
+//     var tr = document.createElement('tr');
+//     for (var j = 1; j < 9; j++) {
+//         var td = document.createElement('td');
+//         if (i%2 == j%2) {
+//             td.style.backgroundColor = "white";
+//             td.style.height = "100px";
+//             td.style.width = "100px";
+//         } else {
+//             td.style.backgroundColor = "black";
+//             td.style.height = "100px";
+//             td.style.width = "100px";
+//         }
+//         tr.appendChild(td);
+//     }
+//     table.appendChild(tr);
+// }
 
-table.style.border = "1px solid grey";
-table.style.margin = "auto";
-container = document.getElementById('container')
-container.appendChild(table);
+// table.style.border = "1px solid grey";
+// table.style.margin = "auto";
+// container = document.getElementById('container')
+// container.appendChild(table);
