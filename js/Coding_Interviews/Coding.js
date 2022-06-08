@@ -2,8 +2,10 @@
 									String to Array
 --------------------------------------------------------------------------------*/	
 let inp = "Bharath CY"
+
 //console.log(inp.split(''))
 //console.log([...inp])
+
 
 /*--------------------------------------------------------------------------------
 									Check the ouput
@@ -28,7 +30,6 @@ let def = null				//***********IMP************
 // console.log("type of rst => ", typeof(rst))
 
 
-
 /*--------------------------------------------------------------------------------
 									Remove Duplicates
 --------------------------------------------------------------------------------*/
@@ -36,8 +37,8 @@ const removeDuplicate = []
 array_name = [1, 3, 5, 77, 5, 77, 86, 3, 90]
 output_array = array_name.filter((element, index) => array_name.indexOf(element) == index);
 //console.log(output_array)
-
 //NOTE: we can use set instead, if they specifically asks without using sets use the above program
+
 
 
 /*--------------------------------------------------------------------------------
@@ -123,29 +124,53 @@ var numbers = [12, 10, 15, 11, 14, 13, 16];
 /*--------------------------------------------------------------------------------
 						Pass by value and Pass by reference	
 --------------------------------------------------------------------------------*/
+//	a.push(10)	// This is pass by referrence
+//let number = 10
+// console.log(number)
+// add(number)
+// console.log(number)
 
-//pass by value
-function add(a){
-	a = a+10
-}
 
-//pass by reference
+// pass by value
+// When you are paassing a value to a function, if changes the passed value, then it is pass by ref
+// esle it is pass by value
+
+
+
+
+//primitive data types
+//non-prmentive
+
 function add_array(a){
-	//a = [20]		// This is pass by value 
-	a.push(10)	// This is pass by referrence
+	a = [20]		// This is pass by value 
+	//a[2] = 20
+
+	return a
 }
 
-let number = 10
+
+// number_array => "Bangalore"		[1, 2, 3, 5]
+// 		number_array => "Mumbai"	[20]
+
+// dispay => number_array => "Bangalore" 	[1, 2, 3, 5]
+
+
+// number_array => "Bangalore"		[1, 2, 3, 5]
+// 		number_array => "Bangalore"	[1, 2, 3]
+
+// dispay => number_array => "Bangalore" 	[1, 2, 3]
+
+
+//anything with = => it will create a new memory
+
+
 let number_array = [1, 2, 3, 5]
-
-console.log(number)
-add(number)
-console.log(number)
-
-
 console.log(number_array)
 add_array(number_array)
+
+
 console.log(number_array)
+
 
 
 /*--------------------------------------------------------------------------------
@@ -177,11 +202,8 @@ Example_Output = anagram(['kmno', 'okmn', 'omkn', 'dell', 'ledl', 'elld', 'ko'])
 
 
 
-
-
-
 /*--------------------------------------------------------------------------------
-								Armstrong 3 digit Number
+								Armstrong Number
 --------------------------------------------------------------------------------*/
 
 function Armstrong(original_number){
@@ -190,8 +212,6 @@ function Armstrong(original_number){
 	while (temporary_number > 0) {
 		//Fetch Last Digit
 	    let remainder = temporary_number % 10;
-
-
 		const const_remainder = remainder
 	    for (let i=1; i<original_number.toString().length;i++){
 	    	//multiply the number on its length times
@@ -251,5 +271,22 @@ function Armstrong(original_number){
 --------------------------------------------------------------------------------*/
 let a = [1, 2, 3, 4, 5]
 let b = [3, 4, 5, 6]
-let c = a.filter((num) => b.includes(num))
+
+let c = a.filter((num) => b.has(num))
+
 //console.log(c)
+
+
+
+
+// UNION
+// 	==> A + B
+// 	==> concatenate 2 arrays and convert into set
+
+
+// INTERSECTION
+// 	==> Common Elements
+// 	==> .has
+
+// DIFFERENCE
+// 	==> A-B, B-A
