@@ -1,0 +1,56 @@
+Explain Semantic tags 
+Explain types of selectors and its order of precedence (Specificity)
+Combinator selectors
+If we are applying two classes for same div with different style which css will apply Either class 1 or class2
+What is css and why we use it?
+How css works?
+What are the new features in HTML5?
+What are merits and demerits of external css
+How can you create a nested web page in html
+Explain css box model 
+What is Doctype? explain
+Explain flexbox property
+What are different display properties available in html
+What are all the position property
+What class name will you give if want to display a division in center horizontally or vertically in bootstrap
+
+Explain Hoisting
+Explain Call and apply methods
+What are Primitive and non primitive Data types in JS
+What are Object methods
+Explain SetTimeout()
+What is Callback function?
+Difference between declaration and definition
+Difference between arrow function and normal function
+What is the Output of 5+4+'4'-9-4-2
+Can you display 1million of data at a time in the browser? Explain
+What is destructuring in js give an example
+What is typeof operator
+Explain Spread operator ,rest parameter
+Difference between null, undefined and empty
+What are escape characters in js
+Typeof null, undefined, array, object
+Output of
+	Null==undefined
+	Null===undefined
+
+Overriding equals
+Diffence b/w == and===
+Explain Ternary operator with example
+
+White a function to merge 2 arrays and removing duplicates without using inbuilt function 
+White a function on sorting the number in ascending order
+White a function on removing duplicates
+White a function to Reverse a string (with and without using built in method)
+function to calculate the frequency of occurance of each number are=[1,1,2,3,4,4]
+How do you loop through on object
+Write a function for palindrome
+What is closure
+Write a code for closure with an example
+What is armstrong number? write the function.
+What are classes
+Destructuring of objects
+Inheritance 
+About spread operators can it be used with objects
+What is super in JS?
+Explain Static method in JS
