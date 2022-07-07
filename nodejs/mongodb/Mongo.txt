@@ -1,0 +1,74 @@
+Create DB
+	use DATABASE_NAME
+
+Drop DB
+	db.dropDatabase()
+
+View DB
+	show dbs;
+
+Create Collections
+	db.createCollection(name, options)
+	options =>
+			capped 		=> to overwrite db on db is full
+			size 		=> maximum size in bytes for capped collection
+			max 		=> Specifies the maximum number of documents
+			               allowed in the capped
+
+	 db.createCollection("Student")
+
+
+
+View collections
+	show collections;
+
+
+Drop collections
+	db.Student.drop()
+
+
+Insert Documents
+	db.Student.insert({"name" : "Sachin"})
+	db.Student.insertOne({"name" : "Sachin"})
+	db.Student.insertMany([{"name" : "Sachin"}])
+
+
+View Documents
+	db.Student.find()
+	db.Student.find().pretty()
+
+	db.Student.find({<field>:value})
+	db.Student.find({<field>:{"condition":value}})
+	db.Student.find({"_id":ObjectId("62c5d55ee5cd83ed968da342")});
+
+			$ne
+			$gt
+			$lt
+
+			$in:{["raj", "sachin", "rahul"]}
+			$nin
+			$or
+			$not
+			$nor
+			$and
+
+
+Update Documents
+	db.Student1.update(
+	{"_id":ObjectId("62c5d60ee5cd83ed968da344")},
+	{$set:{"name":"raj"}});
+
+
+Remove Documents
+	db.Student1.remove({"_id":ObjectId("62c5d60ee5cd83ed968da344")})
+
+
+Projection
+	db.Student.find({}, {_id:0})
+
+
+Limit and Skip
+	db.Student.find().limit(3).skip(2)
+
+Sort
+	db.Student.find().sort({"name":-1})

@@ -1,0 +1,7 @@
+How to Create DB
+HOW to delete a datable
+How to take back of a DB
+How insert Table in a DB
+How to Filter Tables
+How to order it
+HOw to get count of the tables

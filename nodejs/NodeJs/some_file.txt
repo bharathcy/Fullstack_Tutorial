@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="content-type;" content="text/html" charset="utf-8">
+		<meta name="keywords" content="mobile phone, watch, ....">
+		<meta name="description" content="This Website is related to ecommerce">
+		<meta name="author" content="tutorial">
+
+		<link rel="icon" type="image/x-icon" href="website.ico">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<style type="text/css">
+
+			table{
+
+				width: 100%;
+			}
+			
+			table, td, th {
+
+				border: 1px solid black;
+				border-collapse: collapse;
+				padding: 20px;
+			}
+
+			thead{
+				background-color: gray;
+				color: white;
+			}
+
+
+			tr:nth-child(even){
+				background-color: red;
+			}
+
+		</style>
+
+
+    </head>
+
+	
+    <body style="margin:0; padding: 0;">
+
+
+    	<table>
+    		<thead>		
+		    		<tr>
+		    			<th colspan="2">  Col1   </th><th>  Col3   </th><th>  Col4   </th>
+		    		</tr>    			
+    		</thead>
+    		
+    		<tbody>
+	    		<tr>
+	    			<td>  India   </td><td>  Asia   </td><td>  100B   </td><td>  Abc   </td>
+	    		</tr>
+	    		<tr>
+	    			<td>  UK   </td><td>  Europe   </td><td>  30B   </td><td>  def   </td>
+	    		</tr>
+	    		<tr>
+	    			<td>  USA   </td><td>  NA   </td><td>  20B   </td><td>  ghi   </td>
+	    		</tr>
+				<tr>
+	    			<td>  USA   </td><td>  NA   </td><td>  20B   </td><td>  ghi   </td>
+	    		</tr>
+    		</tbody>
+
+
+    	</table>
+
+
+	</body>
+</html>

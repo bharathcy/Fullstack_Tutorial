@@ -302,7 +302,6 @@ console.log(numbers)
 // MAP
 const number_array = [1, 2, 3, 4];
 let modified_array = number_array.map(i=>i*i)
-
 console.log(number_array)
 console.log(modified_array)
 

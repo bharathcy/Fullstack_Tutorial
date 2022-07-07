@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model:30 Days Of JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Body Mass Index Calculator</h1>
+
+
+  <form>
+    <input type="text" id="mass" placeholder="Mass in Kilogram" required/>
+    <input type="text" id="height" placeholder="Height in meters" required/>
+    <input type="submit" id="button" value="Submit" 
+    onclick="alert(document.querySelector('#mass').value/document.querySelector('#height').value**2)" />
+  </form>
+
+    <script>
+      const mass = document.querySelector('#mass').value
+      const height = document.querySelector('#height').value
+      const button = document.querySelector('#button')
+      let bmi = 0
+
+    </script>
+  </body>
+</html>
