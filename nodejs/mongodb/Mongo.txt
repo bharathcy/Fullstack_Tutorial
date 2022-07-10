@@ -55,7 +55,7 @@ View Documents
 
 Update Documents
 	db.Student1.update(
-	{"_id":ObjectId("62c5d60ee5cd83ed968da344")},
+	{"_id":ObjectId("62c9335fdfba21f917f66fbc")},
 	{$set:{"name":"raj"}});
 
 
