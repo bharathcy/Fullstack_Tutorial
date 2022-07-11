@@ -9,7 +9,6 @@ app.set('view engine','ejs');
 app.engine('ejs', require('ejs').__express);
 app.use( express.static( "uploads" ));
 
-
 connection_string = "mongodb://127.0.0.1:27017/Blogs"
 mongoose.connect(connection_string);
 
@@ -31,7 +30,6 @@ const update_one = (collection_name) => {
     {$set:{"title":"Testing3"}});
 }
 
-
 const fileUpload = async (collection_name, files) => {
         let uploadPath = ''
         let rawFile = ''
@@ -45,7 +43,8 @@ const fileUpload = async (collection_name, files) => {
         if(err) console.log(err)
         return "Successfully uploaded"
       })
-  };
+};
+
 
 const updateItem = (collection_name, id, values) => {
   const collection = mongoose.connection.db.collection(collection_name);
@@ -59,7 +58,7 @@ app.get('/write_blog', (req, res) => {
     res.sendFile(__dirname +'/views/index.html')
 })
 
-app.get('/getAll', async (req, res) => {
+app.post('/getAll', async (req, res) => {
     res.send(await getItems('blog_list'))
 })
 
@@ -82,6 +81,16 @@ app.post('/insert', async (req, res) => {
 app.get("/", async(req, res) => {
     console.log(await getItems('blog_list'))
   res.render("home", {"data":await getItems('blog_list')})
+})
+
+
+app.get('/login_page/', (req, res) => {
+    res.sendFile(__dirname +'/views/login.html')
+})
+
+
+app.post('/login', (req, res) => {
+    res.send("invalid")
 })
 
 
