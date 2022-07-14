@@ -80,7 +80,7 @@ app.post('/insert', async (req, res) => {
 
 app.get("/", async(req, res) => {
     console.log(await getItems('blog_list'))
-  res.render("home", {"data":await getItems('blog_list')})
+  res.render("home", {"data":await getItems('blog_list')}) //cONTEXT
 })
 
 
@@ -90,7 +90,7 @@ app.get('/login_page/', (req, res) => {
 
 
 app.post('/login', (req, res) => {
-    res.send("invalid")
+    res.send(DATA)
 })
 
 
