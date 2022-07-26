@@ -2,10 +2,8 @@ function TableRow(props){
     return <tr> <td>{props.name}</td> </tr>
 };
 
-
-
 const TableElement = () => {
-  let table_data = ["Lisa", "Ram", "Firoz", "Lyka"]
+  let table_data = ["Lisa", "Ram", "Firoz", "Lyka"];
   return (<table>
       <tr>
         <th>Name</th>

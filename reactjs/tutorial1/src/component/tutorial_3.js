@@ -1,18 +1,35 @@
-function TableRow(props){
-    return <tr> <td>{props.name}</td> </tr>
-};
+import { useState } from "react";
+
+function Intro(props) {
+  const [name, setName] = useState("Joseph");
+  return <h1 onClick={()=>setName("Raj")}>My name is {name} </h1>;
+}
+
+export default Intro;
 
 
 
-const TableElement = () => {
-  let table_data = ["Lisa", "Ram", "Firoz", "Lyka"]
-  return (<table>
-      <tr>
-        <th>Name</th>
-      </tr>
-        {table_data.map((data)=> <TableRow name={data} />)}
-    </table>);
-};
 
 
-export default TableElement;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // const [name, setName] = useState(props.name);
