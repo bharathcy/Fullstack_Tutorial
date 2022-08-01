@@ -1,18 +1,37 @@
-import Table from 'react-bootstrap/Table'
-
 function TableRow(props){
     return <tr> <td>{props.name}</td> </tr>
 };
 
 const TableElement = () => {
-  let table_data = ["Lisa", "Ram", "Firoz", "Lyka"]
-  return (
-        <div>
-          <input type='button' className="m-5 btn btn-primary btn-block" value='Submit'/>
-        </div>)};
-
+  let table_data = ["Lisa", "Ram", "Firoz", "Lyka"];
+  return (<table>
+      <tr>
+        <th>Name</th>
+      </tr>
+        {table_data.map((data)=> <TableRow name={data} />)}
+    </table>);
+};
 
 export default TableElement;
+
+
+
+// import Table from 'react-bootstrap/Table'
+
+// function TableRow(props){
+//     return <tr> <td>{props.name}</td> </tr>
+// };
+
+// const TableElement = () => {
+//   let table_data = ["Lisa", "Ram", "Firoz", "Lyka"]
+//   return (
+//         <div>
+//           <TableRow/>
+//           <input type='button' className="m-5 btn btn-primary btn-block" value='Submit'/>
+//         </div>)};
+
+
+// export default TableElement;
 
 
 // import Table from 'react-bootstrap/Table';

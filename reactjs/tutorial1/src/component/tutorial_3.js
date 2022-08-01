@@ -1,8 +1,11 @@
 import { useState } from "react";
 
 function Intro(props) {
-  const [name, setName] = useState("Joseph");
-  return <h1 onClick={()=>setName("Raj")}>My name is {name} </h1>;
+  const [name, setSome] = useState(props.name);
+
+
+  return <h1 onClick={
+    ()=>setSome("Raj")}>My name is {name} </h1>;
 }
 
 export default Intro;
