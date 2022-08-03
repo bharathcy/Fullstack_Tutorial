@@ -9,7 +9,7 @@ function RefTutorial() {
   return (
     <div>
       <h1>Pedro</h1>
-      <input type="text" placeholder="Ex..." ref={inputRef} />
+      <input type='text'/>
       <button onClick={onClick}>Change Name</button>
     </div>
   );
